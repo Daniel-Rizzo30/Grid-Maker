@@ -1,0 +1,11 @@
+/* Don't necessarily need to modify this file or html. All work in script file */
+/* tr and td tags are used to access table row and cell */
+tr,td{ 
+    border:1px;
+    border-style: solid;
+}
+td{
+    height: 50px; 
+    width: 50px; /* Set box dimensions */
+    background-color: white; /* Inner color of boxes */
+}
