@@ -5,27 +5,13 @@ let colorSelected;
 // Add a row
 function addR() {
     //alert("Clicked Add Row"); // Replace this line with your code.
-
-    // numRows++; // Add one row to the counter
-    // if (numCols <= 0) { // If no columns at all
-    //     numCols = 1; // Make it one column so at least one cell shows up
-    // }
-    // let grid = document.getElementById("grid"); // Table's name is grid in the html
-    // //for (let i = 0; i < numRows; i++) { // Not needed, just append grid's child?
-    //     let tr = document.createElement("tr"); // Create row element
-    //     let td = document.createElement("td"); // Make one cell
-    //     td.style.borderColor = "black";
-    //     for (let j = 0; j < numCols; j++) { // For each column needed
-    //         tr.appendChild(td); // Add it to the row
-    //     }
-    //     document.querySelector("#grid").appendChild(td); // Add full row to the grid.
-                
-    // //}
-
     let grid = document.getElementById("grid"); // Table's name is grid in the html
     let row = grid.insertRow(-1); // Add at the end of the table
     numRows++; // Add one row to the counter
-    for (let j = 0; j <= numCols; j++) { // For each column needed
+    if (numCols <= 0) {
+        numCols = 1;
+    }
+    for (let j = 0; j < numCols; j++) { // For each column needed
         let cell = row.insertCell(0); // Add it to the end of the row
         cell.innerHTML = " "; // Maybe add blankness to the cell? I don't know
     }
