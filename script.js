@@ -12,8 +12,8 @@ function addR() {
     let grid = document.getElementById("grid"); // Table's name is grid in the html
     //for (let i = 0; i < numRows; i++) { // Not needed, just append grid's child?
         let tr = document.createElement("tr"); // Create row element
+        let td = document.createElement("td"); // Make one cell
         for (let j = 0; j < numCols; j++) { // For each column needed
-            let td = document.createElement("td"); // Make one cell
             tr.appendChild(td); // Add it to the row
         }
         document.getElementById("grid").appendChild(tr); // Add full row to the grid.
