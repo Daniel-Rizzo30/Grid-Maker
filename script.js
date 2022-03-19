@@ -23,10 +23,10 @@ function addR() {
     // //}
 
     let grid = document.getElementById("grid"); // Table's name is grid in the html
-    let row = grid.insertRow(numRows);
+    let row = grid.insertRow(-1); // Add at the end of the table
     numRows++; // Add one row to the counter
     for (let j = 0; j <= numCols; j++) { // For each column needed
-        row.insertCell(j); // Add it to the row
+        let cell = row.insertCell(-1); // Add it to the end of the row
     }
 
 }
