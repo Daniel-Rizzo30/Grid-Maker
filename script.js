@@ -42,8 +42,13 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-    alert("Clicked Remove Col"); // Replace this line with your code.
-}
+    //alert("Clicked Remove Col"); // Replace this line with your code.
+    let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
+    numCols--; // Add one row to the counter
+    for (let j = 0; j < rows.length; j++) {
+        let cell = rows[j].deleteCell(-1); // Remove cell in the last position in row
+    }
+} 
 
 // Sets global variable for selected color
 function selectColor(){
