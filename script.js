@@ -4,7 +4,18 @@ let colorSelected;
 
 // Add a row
 function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+    //alert("Clicked Add Row"); // Replace this line with your code.
+    let grid = document.getElementById("grid"); // Table's name is grid in the html
+    let row = grid.insertRow(-1); // Add at the end of the table
+    numRows++; // Add one row to the counter
+    if (numCols <= 0) {
+        numCols = 1;
+    }
+    for (let j = 0; j < numCols; j++) { // For each column needed
+        let cell = row.insertCell(0); // Add it to the end of the row
+        cell.innerHTML = " "; // Maybe add blankness to the cell? I don't know
+    }
+
 }
 
 // Add a column
