@@ -13,10 +13,11 @@ function addR() {
     //for (let i = 0; i < numRows; i++) { // Not needed, just append grid's child?
         let tr = document.createElement("tr"); // Create row element
         let td = document.createElement("td"); // Make one cell
+        td.style.borderColor = "black";
         for (let j = 0; j < numCols; j++) { // For each column needed
             tr.appendChild(td); // Add it to the row
         }
-        document.getElementById("grid").appendChild(td); // Add full row to the grid.
+        document.querySelector("#grid").appendChild(td); // Add full row to the grid.
                 
     //}
 }
