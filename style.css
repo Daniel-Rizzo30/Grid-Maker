@@ -8,4 +8,5 @@ td{
     height: 50px; 
     width: 50px; /* Set box dimensions */
     background-color: white; /* Inner color of boxes */
+    border-color: black;
 }
