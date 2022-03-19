@@ -20,13 +20,13 @@ function addR() {
 // Add a column
 function addC() {
     //alert("Clicked Add Col"); // Replace this line with your code.
-    let grid = document.getElementById("grid"); // Table's name is grid in the html
+    let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
     numCols++; // Add one row to the counter
     if (numRows <= 0) {
         numRows = 1;
     }
-    for (let j = 0; j < numRows; j++) {
-        let cell = grid.children[j].insertCell(-1); // Add cell to the last position in row
+    for (let j = 0; j < rows.length; j++) {
+        let cell = rows[j].insertCell(-1); // Add cell to the last position in row
         cell.innerHTML = " ";
     }
 }
