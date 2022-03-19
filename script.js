@@ -5,6 +5,20 @@ let colorSelected;
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
+    numRows++; // Add one row to the counter
+    if (numCols <= 0) { // If no columns at all
+        numCols = 1; // Make it one column so at least one cell shows up
+    }
+    let grid = document.getElementById("grid"); // Table's name is grid in the html
+    //for (let i = 0; i < numRows; i++) { // Not needed, just append grid's child?
+        let tr = document.createElement("tr"); // Create row element
+        for (let j = 0; j < numCols; j++) { // For each column needed
+            let td = document.createElement("td"); // Make one cell
+            tr.appendChild(td); // Add it to the row
+        }
+        grid.appendChild(tr); // Add full row to the grid.
+                
+    //}
 }
 
 // Add a column
