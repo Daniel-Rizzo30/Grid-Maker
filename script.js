@@ -23,7 +23,9 @@ function addC() {
     let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
     numCols++; // Add one row to the counter
     if (numRows <= 0) {
-        numRows = 1;
+        numRows = 0; // Reset to zero
+        addR(); // add a row
+        return; // Don't do anything else
     }
     for (let j = 0; j < rows.length; j++) {
         let cell = rows[j].insertCell(-1); // Add cell to the last position in row
@@ -33,7 +35,9 @@ function addC() {
 
 // Remove a row
 function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+    //alert("Clicked Remove Row"); // Replace this line with your code.
+    document.getElementById("grid").deleteRow(-1); // Table's name is grid in the html
+    numRows--; // Add one row to the counter
 }
 
 // Remove a column
