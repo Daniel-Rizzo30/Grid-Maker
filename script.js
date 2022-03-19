@@ -33,7 +33,9 @@ function addC() {
 
 // Remove a row
 function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+    //alert("Clicked Remove Row"); // Replace this line with your code.
+    document.getElementById("grid").deleteRow(-1); // Table's name is grid in the html
+    numRows--; // Add one row to the counter
 }
 
 // Remove a column
