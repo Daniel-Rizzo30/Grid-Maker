@@ -26,7 +26,8 @@ function addR() {
     let row = grid.insertRow(-1); // Add at the end of the table
     numRows++; // Add one row to the counter
     for (let j = 0; j <= numCols; j++) { // For each column needed
-        let cell = row.insertCell(-1); // Add it to the end of the row
+        let cell = row.insertCell(0); // Add it to the end of the row
+        cell.innerHTML = " "; // Maybe add blankness to the cell? I don't know
     }
 
 }
