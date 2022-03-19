@@ -14,6 +14,9 @@ function addR() {
     for (let j = 0; j < numCols; j++) { // For each column needed
         let cell = row.insertCell(-1); // Add it to the end of the row
         cell.innerHTML = " "; // Maybe add blankness to the cell? I don't know
+        cell.onclick = function() { // Add onclick functionality to the boxes
+            this.style.backgroundColor = colorSelected;
+        }
     }
 }
 
@@ -30,6 +33,9 @@ function addC() {
     for (let j = 0; j < rows.length; j++) {
         let cell = rows[j].insertCell(-1); // Add cell to the last position in row
         cell.innerHTML = " ";
+        cell.onclick = function() { // Add onclick functionality to the boxes
+            this.style.backgroundColor = colorSelected;
+        }
     }
 }
 
