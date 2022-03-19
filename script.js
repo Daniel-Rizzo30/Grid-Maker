@@ -48,7 +48,7 @@ function removeC() {
     for (let j = 0; j < rows.length; j++) {
         let cell = rows[j].deleteCell(-1); // Remove cell in the last position in row
     }
-}
+} 
 
 // Sets global variable for selected color
 function selectColor(){
