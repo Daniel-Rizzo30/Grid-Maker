@@ -4,7 +4,7 @@ let colorSelected;
 
 // Add a row
 function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+    //alert("Clicked Add Row"); // Replace this line with your code.
     numRows++; // Add one row to the counter
     if (numCols <= 0) { // If no columns at all
         numCols = 1; // Make it one column so at least one cell shows up
@@ -16,7 +16,7 @@ function addR() {
             let td = document.createElement("td"); // Make one cell
             tr.appendChild(td); // Add it to the row
         }
-        grid.appendChild(tr); // Add full row to the grid.
+        document.getElementById("grid").appendChild(tr); // Add full row to the grid.
                 
     //}
 }
