@@ -16,7 +16,7 @@ function addR() {
         for (let j = 0; j < numCols; j++) { // For each column needed
             tr.appendChild(td); // Add it to the row
         }
-        document.getElementById("grid").appendChild(tr); // Add full row to the grid.
+        document.getElementById("grid").appendChild(td); // Add full row to the grid.
                 
     //}
 }
