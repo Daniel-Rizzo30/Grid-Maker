@@ -18,10 +18,10 @@ td{
     background-color: white; /* Inner color of boxes */
     border-color: rgb(68, 68, 68); /* Gray border */
 }
-button{
+button,select{
     font-size: large;
     background-color: blanchedalmond;
 }
 body{
-    color: rgb(179, 151, 110);
+    background-color: rgb(179, 151, 110);
 }
