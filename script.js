@@ -70,8 +70,8 @@ function fillU(){
     //alert("Clicked Fill All Uncolored"); // Replace this line with your code.
     let cells = document.getElementsByTagName("td"); // Grab all cell elements in the doc
     for (let j = 0; j < cells.length; j++) {
-        if (cells[j].backgroundColor == "white") {
-            cells[j].backgroundColor = colorSelected;
+        if (cells[j].style.backgroundColor == "white") {
+            cells[j].style.backgroundColor = colorSelected;
         }
     }
 }
