@@ -90,7 +90,7 @@ function clearAll(){
     //alert("Clicked Clear All"); // Replace this line with your code.
     let cells = document.getElementsByTagName("td"); // Grab all cell elements in the doc
     for (let j = 0; j < cells.length; j++) {
-        cells[j].removeAttribute("background-color") = colorSelected; 
+        cells[j].removeAttribute("background-color"); 
         // remove the backgroundColor property
     }
 }
