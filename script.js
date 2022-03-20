@@ -78,7 +78,11 @@ function fillU(){
 
 // Fill all cells
 function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+    //alert("Clicked Fill All"); // Replace this line with your code.
+    let cells = document.getElementsByTagName("td"); // Grab all cell elements in the doc
+    for (let j = 0; j < cells.length; j++) {
+        cells[j].style.backgroundColor = colorSelected; // Just simply change background
+    }
 }
 
 // Clear all cells
