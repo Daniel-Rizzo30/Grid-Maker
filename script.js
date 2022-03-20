@@ -56,7 +56,6 @@ function removeR() {
 function removeC() {
     //alert("Clicked Remove Col"); // Replace this line with your code.
     let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
-    numCols > 0 ? numCols-- : null; // Add one row to the counter
     for (let j = rows.length - 1; j >= 0; j--) {
         if (numCols > 0) { // If there's still a grid
             let cell = rows[j].deleteCell(-1); // Remove cell in the last position in row
@@ -65,6 +64,7 @@ function removeC() {
             document.getElementById("grid").deleteRow(j); // Remove entire row
         }
     }
+    numCols > 0 ? numCols-- : null; // Remove one col to the counter at the end
 } 
 
 // Sets global variable for selected color
