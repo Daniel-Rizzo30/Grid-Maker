@@ -52,7 +52,12 @@ function removeC() {
     let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
     numCols > 0 ? numCols-- : null; // Add one row to the counter
     for (let j = 0; j < rows.length; j++) {
-        let cell = rows[j].deleteCell(-1); // Remove cell in the last position in row
+        if (numCols > 0) { // If there's still a grid
+            let cell = rows[j].deleteCell(-1); // Remove cell in the last position in row
+        }
+        else { // If there is no row left
+            document.getElementById("grid").deleteRow(j); // Remove entire row
+        }
     }
 } 
 
