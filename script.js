@@ -7,7 +7,6 @@ function addR() {
     //alert("Clicked Add Row"); // Replace this line with your code.
     let grid = document.getElementById("grid"); // Table's name is grid in the html
     let row = grid.insertRow(-1); // Add at the end of the table
-    numRows++; // Add one row to the counter
     if (numCols <= 0) {
         numCols = 1;
     }
@@ -18,13 +17,13 @@ function addR() {
             this.style.backgroundColor = colorSelected;
         }
     }
+    numRows++; // Add one row to the counter
 }
 
 // Add a column
 function addC() {
     //alert("Clicked Add Col"); // Replace this line with your code.
     let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
-    numCols++; // Add one row to the counter
     if (numRows <= 0) {
         numRows = 0; // Reset to zero
         addR(); // add a row
@@ -37,6 +36,7 @@ function addC() {
             this.style.backgroundColor = colorSelected;
         }
     }
+    numCols++; // Add one row to the counter
 }
 
 // Remove a row
