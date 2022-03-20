@@ -71,7 +71,7 @@ function fillU(){
     let cells = document.getElementsByTagName("td"); // Grab all cell elements in the doc
     for (let j = 0; j < cells.length; j++) {
         if (cells[j].backgroundColor == "white") {
-            cells.backgroundColor = colorSelected;
+            cells[j].backgroundColor = colorSelected;
         }
     }
 }
