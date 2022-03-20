@@ -73,6 +73,9 @@ function fillU(){
         if (cells[j].style.backgroundColor == "white") {
             cells[j].style.backgroundColor = colorSelected;
         }
+        else {
+            cells[j].style.backgroundColor = colorSelected;
+        }
     }
 }
 
