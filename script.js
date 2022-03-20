@@ -43,14 +43,14 @@ function addC() {
 function removeR() {
     //alert("Clicked Remove Row"); // Replace this line with your code.
     document.getElementById("grid").deleteRow(-1); // Table's name is grid in the html
-    numRows--; // Add one row to the counter
+    numRows > 0 ? numRows-- : null; // Add one row to the counter
 }
 
 // Remove a column
 function removeC() {
     //alert("Clicked Remove Col"); // Replace this line with your code.
     let rows = document.getElementsByTagName("tr"); // Grab all row elements in the doc
-    numCols--; // Add one row to the counter
+    numCols > 0 ? numCols-- : null; // Add one row to the counter
     for (let j = 0; j < rows.length; j++) {
         let cell = rows[j].deleteCell(-1); // Remove cell in the last position in row
     }
