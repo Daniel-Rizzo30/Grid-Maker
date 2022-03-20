@@ -44,6 +44,12 @@ function removeR() {
     //alert("Clicked Remove Row"); // Replace this line with your code.
     document.getElementById("grid").deleteRow(-1); // Table's name is grid in the html
     numRows > 0 ? numRows-- : null; // Add one row to the counter
+    if (numRows <= 0) {
+        numCols = 0; // Reset columns as well, I don't want this to be saved. 
+        // This is a feature not a bug. If the whole grid is wiped, I don't want
+        // numCols to be saved. Adding one row will add in {numCols} columns to that 
+        // one row, which I think is silly. 
+    }
 }
 
 // Remove a column
