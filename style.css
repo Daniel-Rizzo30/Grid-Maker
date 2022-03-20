@@ -1,12 +1,27 @@
+/* 
+Daniel Rizzo
+CSCI Web Development
+Assignment 3 - Grid Maker
+Professor Johnny Lai
+March 25th, 2022 
+*/
+
 /* Don't necessarily need to modify this file or html. All work in script file */
 /* tr and td tags are used to access table row and cell */
 tr,td{ 
-    border:1px;
-    border-style: solid;
+    border:2px;
+    border-style: dashed; /* I want a dashed border */
 }
 td{
-    height: 50px; 
-    width: 50px; /* Set box dimensions */
+    height: 75px; 
+    width: 75px; /* Set box dimensions */
     background-color: white; /* Inner color of boxes */
-    border-color: black;
+    border-color: rgb(68, 68, 68); /* Gray border */
+}
+button{
+    font-size: large;
+    background-color: blanchedalmond;
+}
+body{
+    color: rgb(179, 151, 110);
 }
